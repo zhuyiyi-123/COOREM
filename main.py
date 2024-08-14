@@ -10,7 +10,7 @@ from core.coorem.trainers import DualHeadSurogateTrainer
 from core.utils import RiskSuppressionFactor, sample_langevin, neg_cons, setup_seed
 from core.data import TaskDataset
 from core.coorem.optimizesa import Optimizer
-from workspace.COMS_P.constraint.CEC_problem import cec20_func
+from constraint.CEC_problem import cec20_func
 from constraint import gtopx_data
 from exper import get_parser
 
