@@ -103,14 +103,13 @@ COOREM w/o ARMC:
 optimizesa.py Line 45: uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_inf
 ```
 
-## Start
+## 🖱️ Start
 
 Step 1. prepare dataset
 
 You can use uniform sampling and other methods to sample the target function and generate a dataset, you should prepare the following files:
 
 ├─dataset
-│  └─Your_dataset
 │          data.csv
 
 Step 2. coding
