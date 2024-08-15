@@ -5,7 +5,7 @@ The implementation for the paper "Constrained Offline Black-Box Optimization via
 <img width="911" alt="image" src="https://github.com/user-attachments/assets/a171bb1e-8741-408f-ab86-199ec913d2b1">
 
 
-## Setup
+## 💻Setup
 
 Create the running environment with conda `4.10.3` with Python `3.9.0`:
 
@@ -20,7 +20,7 @@ Install the requirements for running COOREM:
 pip install -r requirements.txt
 ```
 
-## Run experiments
+## 🛠️ Run experiments
 
 All the tasks of COOREM can be find in `gtopx.py` and `CEC_problem.py`. The following command line are available to run experiments:
 
