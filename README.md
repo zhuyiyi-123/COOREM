@@ -20,7 +20,7 @@ Install the requirements for running COOREM:
 pip install -r requirements.txt
 ```
 
-## The project structure
+## 🌳 The project structure
 
 ```
 COOREM
@@ -101,4 +101,24 @@ COOREM w/o ARMC:
 
 ```
 optimizesa.py Line 45: uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_inf
+```
+
+## Start
+
+Step 1. prepare dataset
+
+You can use uniform sampling and other methods to sample the target function and generate a dataset, you should prepare the following files:
+
+├─dataset
+│  └─Your_dataset
+│          data.csv
+
+Step 2. coding
+
+Refer to the main.py, you can change the path to different configuration file.
+
+Step 3. run code
+
+```
+python main.py
 ```
