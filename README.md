@@ -2,6 +2,9 @@
 
 The implementation for the paper "Constrained Offline Black-Box Optimization via Risk Evaluation and Management". 
 
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/a171bb1e-8741-408f-ab86-199ec913d2b1">
+
+
 ## Setup
 
 Create the running environment with conda `4.10.3` with Python `3.9.0`:
