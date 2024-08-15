@@ -107,10 +107,7 @@ optimizesa.py Line 45: uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(u
 
 Step 1. prepare dataset
 
-You can use uniform sampling and other methods to sample the target function and generate a dataset, you should prepare the following files:
-
-├─dataset
-│          data.csv
+You can use uniform sampling and other methods to sample the target function and generate a dataset.
 
 Step 2. coding
 
