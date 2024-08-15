@@ -20,6 +20,29 @@ Install the requirements for running COOREM:
 pip install -r requirements.txt
 ```
 
+## The project structure
+
+```
+COOREM
+├─ constraint
+│  ├─ gtopx_data.py
+│  ├─ gtopx.so
+│  ├─ CEC_problem.py
+├─ core
+│  ├─ data.py
+│  ├─ coorem
+│  │  ├─ nets.py
+│  │  ├─ optimizesa.py
+│  │  ├─ trainers.py
+│  │  └─ __init__.py
+│  └─ utils.py
+├─ README.md
+├─ exper.py
+├─ main.py
+├─ run.sh
+└─ requirements.txt
+```
+
 ## 🛠️ Run experiments
 
 All the tasks of COOREM can be find in `gtopx.py` and `CEC_problem.py`. The following command line are available to run experiments:
@@ -47,7 +70,7 @@ done
 COOREM w/o CSM:
 
 ```
-trainer.py Line 105:             loss = mse.to(dtype=torch.float32) + (self.alpha * score_neg.reshape(len(score_neg), )).mean().to(dtype=torch.float32) --> loss = mse.to(dtype=torch.float32)
+trainer.py Line 105: loss = mse.to(dtype=torch.float32) + (self.alpha * score_neg.reshape(len(score_neg), )).mean().to(dtype=torch.float32) --> loss = mse.to(dtype=torch.float32)
 ```
 
 COOREM w/o ASM:
@@ -65,40 +88,17 @@ optimizesa.py Line 83: add uc_e=0.001/0.01
 COOREM w/on FARM:
 
 ```
-optimizesa.py Line 45:             uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_ood * uc_e_inf
+optimizesa.py Line 45: uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_ood * uc_e_inf
 ```
 
 COOREM w/o ARMO:
 
 ```
-optimizesa.py Line 45:             uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_ood
+optimizesa.py Line 45: uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_ood
 ```
 
 COOREM w/o ARMC:
 
 ```
-optimizesa.py Line 45:             uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_inf
-```
-
-## The project structure
-
-```
-COOREM
-├─ constraint
-│  ├─ gtopx_data.py
-│  ├─ gtopx.so
-│  ├─ CEC_problem.py
-├─ core
-│  ├─ data.py
-│  ├─ coorem
-│  │  ├─ nets.py
-│  │  ├─ optimizesa.py
-│  │  ├─ trainers.py
-│  │  └─ __init__.py
-│  └─ utils.py
-├─ README.md
-├─ exper.py
-├─ main.py
-├─ run.sh
-└─ requirements.txt
+optimizesa.py Line 45: uc_e = (uc_e_ood - max(uc_e_ood) * args.opt_ood) * (max(uc_e_inf) * args.opt_inf - uc_e_inf)-->uc_e = uc_e_inf
 ```
