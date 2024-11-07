@@ -2,7 +2,8 @@ import argparse
 
 def get_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--Task", type=int, default=5)
+    parser.add_argument("--Task", type=str, default='cec_data')
+    parser.add_argument("--benchmark", type=int, default=5)
     parser.add_argument("--csvname", type=str, default='dataset_c&g/Welded_new')
     parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--Task_name", type=str, default='cec20_func')
