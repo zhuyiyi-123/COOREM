@@ -5,6 +5,7 @@ import wandb
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+from Taskdata import OfflineTask
 from core.coorem.nets import DualThreeSurogateModel
 from core.coorem.trainers import DualHeadSurogateTrainer
 from core.utils import RiskSuppressionFactor, sample_langevin, neg_cons, setup_seed
@@ -23,7 +24,7 @@ def stand_scores(data):
 
 def build_data(args):
     # build datasets
-    Task = cec20_func(args.Task)
+    Task = OfflineTask(task=args.Task, benchmark=args.benchmark)
     data_set = pd.read_csv(os.path.join(args.csvname+ '.csv')).values
     ori_x = data_set[:, 1:Task.var_num + 1].astype(np.float64)
     ori_y = -data_set[:, Task.var_num + 1:Task.var_num + Task.obj_num + 1].reshape(len(data_set[:, Task.var_num + 1:Task.var_num + Task.obj_num + 1]), ).astype(np.float64)
