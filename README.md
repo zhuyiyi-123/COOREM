@@ -118,3 +118,16 @@ Step 3. run code
 ```
 python main.py
 ```
+
+## Reference
+Zhu, Y.; Lu, H.; Wu, Y.; Liu, S.; Yang, J.; and Qian, H. "Constrained Offline Black-Box Optimization via Risk Evaluation and Management." In Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI), 2025.
+
+## Bibtex
+```
+@inproceedings{zhu2025coorem,
+ author = {Zhu, Yiyi and Lu, Huakang and Wu, Yupeng and Liu Shuo and Yang, Jin-Wen and Qian, Hong},
+ booktitle = {Proceedings of the 39th AAAI Conference on Artificial Intelligence},
+ title = {Constrained Offline Black-Box Optimization via Risk Evaluation and Management},
+ year = {2025}
+}
+```
