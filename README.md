@@ -1,6 +1,8 @@
 # COOREM
 
-The implementation for the paper "Constrained Offline Black-Box Optimization via Risk Evaluation and Management". 
+The implementation for the paper "Constrained Offline Black-Box Optimization via Risk Evaluation and Management". The main paper and the appendix are in the main.pdf and appendix.pdf respectively, which are contained in the folder named paper
+
+
 
 
 ## 💻Setup
