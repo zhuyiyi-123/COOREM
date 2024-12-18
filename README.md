@@ -20,6 +20,9 @@ Install the requirements for running COOREM:
 pip install -r requirements.txt
 ```
 
+## The Testing Functions and Datasets
+[GTOPX Datasets](https://www.midaco-solver.com/index.php/about/benchmarks/gtopx)
+
 ## 🌳 The project structure
 
 ```
