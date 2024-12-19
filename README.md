@@ -122,7 +122,7 @@ Step 3. run code
 python main.py
 ```
 
-## Bibtex
+## Citation
 ```
 @inproceedings{zhu2025coorem,
  author = {Yiyi Zhu, Huakang Lu, Yupeng Wu, Shuo Liu, Jin-Wen Yang, Hong Qian},
