@@ -1,6 +1,6 @@
 # COOREM
 
-The implementation for the paper "Constrained Offline Black-Box Optimization via Risk Evaluation and Management". The main paper and the appendix are in the main.pdf and appendix.pdf respectively, which are contained in the folder named paper.
+The implementation for the AAAI-25 paper "Constrained Offline Black-Box Optimization via Risk Evaluation and Management". The main paper and the appendix are in the main.pdf and appendix.pdf respectively, which are contained in the folder named paper.
 
 
 
@@ -126,9 +126,9 @@ python main.py
 ```
 @inproceedings{zhu2025coorem,
  author = {Yiyi Zhu, Huakang Lu, Yupeng Wu, Shuo Liu, Jin-Wen Yang, Hong Qian},
- booktitle = {Proceedings of the 39th AAAI Conference on Artificial Intelligence},
+ booktitle = {Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25)},
  title = {Constrained Offline Black-Box Optimization via Risk Evaluation and Management},
  year = {2025},
- address = {Philadelphia, Penesylvania}
+ address = {Philadelphia, PA}
 }
 ```
