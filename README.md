@@ -126,7 +126,7 @@ python main.py
 ```
 @inproceedings{zhu2025coorem,
  author = {Yiyi Zhu, Huakang Lu, Yupeng Wu, Shuo Liu, Jin-Wen Yang, Hong Qian},
- booktitle = {Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25)},
+ booktitle = {Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI)},
  title = {Constrained Offline Black-Box Optimization via Risk Evaluation and Management},
  year = {2025},
  address = {Philadelphia, PA}
